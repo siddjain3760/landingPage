@@ -3510,19 +3510,22 @@ input, select, textarea {
 					top: 0;
 				}
 
-			#banner .content .image {
-				border-radius: 100%;
-				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
-				vertical-align: middle;
-				width: 18em;
-			}
-
-				#banner .content .image img {
+				#banner .content .image {
 					border-radius: 100%;
-					display: block;
-					width: 100%;
+					overflow: hidden;
+					width: 18em;
+					height: 18em;
+					flex-shrink: 0;
+					margin-left: 2em; /* Adjust margin as needed */
+				}
+				
+				#banner .content .image img {
+					border-radius: 50%;
+					overflow: hidden;
+					width: 20em;
+					height: 18em;
+					flex-shrink: 0;
+					margin-left: 2em; /* Adjust margin as needed */
 				}
 
 	body.is-touch #banner {
@@ -4107,5 +4110,7 @@ input, select, textarea {
 						margin: 0;
 						padding: 0;
 					}
+
+					
 
 	}
